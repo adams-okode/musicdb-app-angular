@@ -16,10 +16,13 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "es2020",
-    "lib": [
-      "es2018",
-      "dom"
-    ]
+    "lib": ["es2018", "dom"],
+    "paths": {
+      "@deezer/pages/*": ["src/app/@deezer/pages/*"],
+      "@deezer/interfaces/*": ["src/app/@deezer/libs/interfaces/*"],
+      "@deezer/services/*": ["src/app/@deezer/libs/services/*"],
+      "@deezer/utils/*": ["src/app/@deezer/libs/utils/*"]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
